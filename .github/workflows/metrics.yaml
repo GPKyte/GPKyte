@@ -5,7 +5,7 @@ name: Metrics
 #   ${{ secrets.DEVELOPER_METRICS_TOKEN }} # Allows lowlighter access to developer's metadata, via public repo access.
 on:
   # Schedule updates once per week, mid work week
-  schedule: [{cron: "* 7 0 0 * * WED"}]
+  schedule: [{cron: "0 10 * * WED"}]
   # Lines below let you run workflow manually and on each commit (optional)
   workflow_dispatch:
   push: {branches: ["main"]}
